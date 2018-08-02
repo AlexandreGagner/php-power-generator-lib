@@ -1,0 +1,4 @@
+{% for message in messages %}
+    {% set path = 'messages/' ~ message.type ~ '.twig' %}
+    {% include path %}
+{% endfor %}

@@ -1,0 +1,9 @@
+<div class="ui success message">
+  <i class="close icon" onclick="$(this).parent().slideUp();"></i>
+  <div class="header">
+    {{message.title}}
+  </div>
+  {% if message.message %}
+  <p>{{message.message}}</p>
+  {% endif %}
+</div>
